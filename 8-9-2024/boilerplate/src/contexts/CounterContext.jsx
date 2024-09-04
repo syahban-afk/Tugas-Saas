@@ -1,4 +1,6 @@
 import { createContext, useReducer } from 'react';
+// import Counter from './../components/Counter';
+import PropTypes from 'prop-types';
 
 const CounterContext = createContext();
 
@@ -24,5 +26,9 @@ export function CounterProvider({ children }) {
         </CounterContext.Provider>
     );
 }
+
+CounterProvider.propTypes = {
+    children: PropTypes.node.isRequired,
+};
 
 export default CounterContext;

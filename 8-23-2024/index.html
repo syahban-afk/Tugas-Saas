@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwinds</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <header class="bg-blue-500 text-white text-center p-4">
+        <nav class="bg-gray-800 text-white p-4 flex justify-between items-center fixed top-0 left-0 w-full">
+            <div class="text-lg font-bold">My Blog</div>
+            <ul class="flex space-x-4">
+                <li><a href="#" class="hover:text-gray-300">Home</a></li>
+                <li><a href="#" class="hover:text-gray-300">About</a></li>
+                <li><a href="#" class="hover:text-gray-300">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="bg-cover bg-center h-screen text-white" style="background-image: url('img/animal.jpeg');">
+        <div class="bg-black bg-opacity-50 h-full flex items-center justify-center">
+            <h1 class="text-4xl md:text-6xl font-bold">Welcome to My Blog</h1>
+        </div>
+    </section>
+
+    <section class="grid grid-cols-1 md:grid-cols-3 gap-6 p-6">
+        <article class="bg-white p-4 shadow rounded">
+            <h2 class="text-xl font-bold mb-2">Article 1</h2>
+            <p>Lorem ipsum dolor sit amet...</p>
+        </article>
+        <article class="bg-white p-4 shadow rounded">
+            <h2 class="text-xl font-bold mb-2">Article 2</h2>
+            <p>Lorem ipsum dolor sit amet...</p>
+        </article>
+        <article class="bg-white p-4 shadow rounded">
+            <h2 class="text-xl font-bold mb-2">Article 3</h2>
+            <p>Lorem ipsum dolor sit amet...</p>
+        </article>
+    </section>
+
+
+    <section class="w-full grid grid-cols-1 md:grid-cols-3 gap-4 p-6">
+        <div class="col-span-1 md:col-span-1">
+            <img src="your-image-url.jpg" alt="Image" class="w-full h-auto">
+        </div>
+        <div class="col-span-1 md:col-span-2">
+            <h2 class="text-2xl font-bold mb-4">Article Title</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ac velit quis magna consequat dictum.</p>
+            <button class="bg-blue-300 text-white py-2 px-4 rounded hover:bg-blue-400">
+                Read More
+            </button>
+        </div>
+    </section>
+
+
+</body>
+
+</html>
